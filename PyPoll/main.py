@@ -34,7 +34,7 @@ with open(csvpath) as csvfile:
         # Set candidate name to Candidate field i.e. row[2] from current row
         candidate_name = row[2]
         
-        # Check is candidate's name is already in dictionary
+        # Check if candidate's name is already in dictionary
         # If so increment candidate's vote count by 1
         if candidate_name in candidate_votes:
             candidate_votes[candidate_name] = candidate_votes[candidate_name] + 1
